@@ -3,7 +3,7 @@
 ```sh
 opam repo add coq-released https://coq.inria.fr/opam/released
 opam repo add coq-core-dev https://coq.inria.fr/opam/core-dev
-opam switch coq
+opam switch system
 eval `opam config env`
 opam install coq.8.7.dev
 ```
