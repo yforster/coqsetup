@@ -46,3 +46,4 @@ git clone git://github.com/bbatsov/prelude.git path/to/local/repo
 ln -s path/to/local/repo ~/.emacs.d
 cd ~/.emacs.d
 ```
+(You have to adapt `path/to/local/repo` to e.g. `~/prelude/`)
