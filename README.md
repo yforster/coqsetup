@@ -1,3 +1,5 @@
+These instructions are for Linux and Mac OS. If you are using Windows and want to use opam, you're probably best off by using a virtual machine.
+
 ## Coq opam repos:
 
 Install [opam](https://opam.ocaml.org/).
