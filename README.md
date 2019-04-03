@@ -9,13 +9,24 @@ opam repo add coq-released https://coq.inria.fr/opam/released
 opam repo add coq-core-dev https://coq.inria.fr/opam/core-dev
 opam switch system
 eval `opam config env`
-opam install coq.8.7.0
+opam install coq.8.9.0
+```
+To install the [equations](https://github.com/mattam82/Coq-Equations) package, run
+```sh
+opam install coq-equations.1.2~beta2+8.9
+```
+If you want to use Coq IDE, run
+```sh
+opam install coqide.8.9.0
 ```
 
 ## Proof General:
 
 In case you haven't installed emacs already, see below.
-You need to install [Proof General](http://proofgeneral.github.io/) like this:
+
+It's recommended to install [Proof General](http://proofgeneral.github.io/) from MELPA. All you need to do is <kbd>M-x package-refresh-contents RET</kbd> followed by <kbd>M-x package-install RET proof-general RET</kbd>.
+
+It's still possible to install via git:
 
 ```sh
 git clone https://github.com/ProofGeneral/PG ~/.emacs.d/lisp/PG
