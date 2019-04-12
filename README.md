@@ -2,13 +2,17 @@ These instructions are for Linux and Mac OS. If you are using Windows and want t
 
 ## Coq opam repos:
 
-Install [opam](https://opam.ocaml.org/).
+Install [opam](https://opam.ocaml.org/). Then do
 
+```sh
+opam init -n --comp=ocaml-base-compiler.4.02.3 -j 2
+```
+You can now install Coq:
 ```sh
 opam repo add coq-released https://coq.inria.fr/opam/released
 opam repo add coq-core-dev https://coq.inria.fr/opam/core-dev
 opam switch system
-eval `opam config env`
+eval $(opam env)`
 opam install coq.8.9.0
 ```
 To install the [equations](https://github.com/mattam82/Coq-Equations) package, run
