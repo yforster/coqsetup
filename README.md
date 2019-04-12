@@ -12,7 +12,7 @@ You can now install Coq:
 opam repo add coq-released https://coq.inria.fr/opam/released
 opam repo add coq-core-dev https://coq.inria.fr/opam/core-dev
 opam switch system
-eval $(opam env)`
+eval $(opam env)
 opam install coq.8.9.0
 ```
 To install the [equations](https://github.com/mattam82/Coq-Equations) package, run
